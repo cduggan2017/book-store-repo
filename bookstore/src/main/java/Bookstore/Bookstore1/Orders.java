@@ -14,6 +14,15 @@ public class Orders {
 	@Column (length = 50)
 	protected String orderName;
 	
+	@Column (length = 50)
+	protected String orderDescription;
+	
+	@Column (length = 50)
+	protected int quantity;
+	
+	@Column (length = 50)
+	protected Float total;
+	
 	public Long getId() {
 		return id;
 	}
@@ -54,14 +63,13 @@ public class Orders {
 		this.total = total;
 	}
 
-	@Column (length = 50)
-	protected String orderDescription;
-	
-	@Column (length = 50)
-	protected int quantity;
-	
-	@Column (length = 50)
-	protected Float total;
+	@Override
+	public String toString() {
+		return "Orders [id=" + id + ", orderName=" + orderName + ", orderDescription=" + orderDescription
+				+ ", quantity=" + quantity + ", total=" + total + "]";
+	}
+
+
 
 
 }

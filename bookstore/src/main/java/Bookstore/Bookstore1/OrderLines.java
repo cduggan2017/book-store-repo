@@ -64,5 +64,11 @@ public class OrderLines {
 		SalesPerson = salesPerson;
 	}
 
+	@Override
+	public String toString() {
+		return "OrderLines [id=" + id + ", Name=" + Name + ", Items=" + Items + ", OrderIDs=" + OrderIDs
+				+ ", SalesPerson=" + SalesPerson + "]";
+	}
+
 
 }

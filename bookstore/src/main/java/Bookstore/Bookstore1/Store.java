@@ -22,4 +22,53 @@ public class Store{
 	
 	@Column (length = 50)
 	protected String NumberOfFloors;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getStoreName() {
+		return storeName;
+	}
+
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getManager() {
+		return Manager;
+	}
+
+	public void setManager(String manager) {
+		Manager = manager;
+	}
+
+	public String getNumberOfFloors() {
+		return NumberOfFloors;
+	}
+
+	public void setNumberOfFloors(String numberOfFloors) {
+		NumberOfFloors = numberOfFloors;
+	}
+
+	@Override
+	public String toString() {
+		return "Store [id=" + id + ", storeName=" + storeName + ", location=" + location + ", Manager=" + Manager
+				+ ", NumberOfFloors=" + NumberOfFloors + "]";
+	}
+	
+	
+	
 }

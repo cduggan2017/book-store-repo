@@ -43,6 +43,11 @@ public class Customers {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	@Override
+	public String toString() {
+		return "Customers [id=" + id + ", fName=" + fName + ", sName=" + sName + ", address=" + address + ", email="
+				+ email + "]";
+	}
 	
 	
 	

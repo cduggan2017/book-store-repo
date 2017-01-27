@@ -64,5 +64,11 @@ public class Author {
 		this.countryOfResidence = countryOfResidence;
 	}
 
+	@Override
+	public String toString() {
+		return "Author [id=" + id + ", firstName=" + firstName + ", secondName=" + secondName + ", dateOfBirth="
+				+ dateOfBirth + ", countryOfResidence=" + countryOfResidence + "]";
+	}
+
 
 }
