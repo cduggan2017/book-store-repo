@@ -1,4 +1,4 @@
-package com.bookstore;
+package Bookstore.Bookstore1;
 
 /**
  * Hello world!
